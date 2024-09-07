@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("../img/bg-pattern-top-desktop.svg"),
+        url("../img/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+}
+@font-face {
+    font-family: exBoldSpartan;
+    src: url("../public/font/LeagueSpartan-ExtraBold.ttf");
+}
+@font-face {
+    font-family: lightSpartan;
+    src: url("../public/font/LeagueSpartan-Light.ttf");
+}
+@font-face {
+    font-family: boldSpartan;
+    src: url("../public/font/LeagueSpartan-Bold.ttf");
+}
+.left-side h1 {
+    font-family: exBoldSpartan;
+    color: #512252;
+    max-width: 220px;
+}
+.left-side p {
+    font-family: lightSpartan;
+    max-width: 400px;
+    line-height: 23px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box {
+    background-color: #f7f2f8;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.box:nth-child(2) {
+    margin-left: 50px;
+}
+.box:last-child {
+    margin-left: 100px;
+}
+.box h4 {
+    font-family: boldSpartan;
+    color: #512252;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 50px;
+}
+.card {
+    background-color: #512252;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+}
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.card img {
+    border-radius: 50%;
+    max-height: 50px;
+}
+.top-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.card p {
+    padding-top: 15px;
+    font-family: lightSpartan;
+}
+.card h4 {
+    font-family: boldSpartan;
+}
+.card h4:nth-child(2) {
+    color: rgb(166, 5, 166);
+}
+.card:nth-child(2) {
+    margin-top: 10px;
+}
+.card:nth-child(3) {
+    margin-top: 20px;
+}
+@media screen and (max-width: 860px) {
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .left-side {
+        align-items: center;
+        justify-content: center;
+    }
+    .right-side {
+        align-items: center;
+    }
+    .box {
+        max-width: 400px;
+        width: 100%;
+    }
+    .box:nth-child(2) {
+        margin-left: 0;
+    }
+    .box:nth-child(3) {
+        margin-left: 0;
+    }
+    .bottom-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card:nth-child(2) {
+        margin-top: 0;
+    }
+    .card:nth-child(3) {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .box {
+        min-width: 300px;
+    }
+}
